@@ -53,6 +53,7 @@ if(condition){
     // false statement
 }
 
+// if else programs
 */
 
 {
@@ -66,8 +67,98 @@ if(condition){
   }
 
 }
+  console.log("...................................");
 
 
+
+
+{
+  let x=18
+  if(x>=18){
+    console.log("Eligible for vote");
+  }else{
+    console.log("Not Eligible for vote");
+  }
+}
+  console.log("...................................");
+
+{
+  let temp=40
+  if(temp>40){
+    console.log("Too Hot");
+  }else{
+    console.log("Normal Weather");
+  }
+  console.log("...................................");
+}
+
+{
+  let number= -10
+  if(number>0){
+    console.log("Positive Number");
+  }else{
+    console.log("Negative Number");
+  }
+}
+  console.log("...................................");
+
+{
+  let mark="+91"
+  if(mark=="+91"){
+    console.log("India");
+  }else{
+    console.log("Not India");
+  }
+}
+  console.log("...................................");
+
+{
+  let age = 20;
+let hasVoterId = false;
+
+if (age >= 18 && hasVoterId) {
+    console.log("You are eligible to vote. so apply f0  r voter id card");
+} else {
+    console.log("You are not eligible to vote.");
+}
+
+}
+  console.log("...................................");
+{
+let year = 2024;
+
+if (year % 4 === 0 ) {
+    console.log("Leap year");
+} else {
+    console.log("Not a leap year");
+}
+
+}
+  console.log("...................................");
+{
+  let n = 12;
+
+if (n % 2 === 0 && n % 3 === 0) {
+    console.log("Divisible by 2 and 3");
+} else {
+    console.log("Not divisible by both");
+}
+
+}
+  console.log("...................................");
+
+{
+  let num = 25;
+
+if (num % 5 === 0) {
+    console.log("Multiple of 5");
+} else {
+    console.log("Not a multiple of 5");
+}
+
+}
+
+/* if else if else programs */
 /* if....else.....if */
 
 /* syntax */
@@ -79,6 +170,7 @@ if(condition){
 // }
 
 /* Library */
+
 
 {
   console.log("...................................");
@@ -100,8 +192,49 @@ if(condition){
 
   
 }
+{
+  let age=20
+  if(age<13){
+    console.log("Child");
+  }else if(age>=13 && age<20){
+    console.log("Teenager");
+  }else if(age>=20 && age<60){
+    console.log("Adult");
+  }else{
+    console.log("Senior Citizen");
+  }
+}
+  console.log("...................................");
+{
+  let age = 17; 
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+} else if (age < 0) {
+    console.log("Please enter a valid age.");
+} else {
+    console.log("You are not eligible to vote yet.");
+}
+
+}
+  console.log("...................................");
+{
+  let age = 20; 
+let hasVoterId = true;
+
+if (age >= 18 && hasVoterId) {
+    console.log("You are eligible to vote.");
+} else if (age >= 18 && !hasVoterId) {
+    console.log("You need a voter ID card to vote.");
+} else {
+    console.log("You are not eligible to vote yet.");
+}
+
+}
+  console.log("...................................");
 
 /* switch case */
+
 
 {
   console.log("...................................");
