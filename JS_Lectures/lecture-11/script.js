@@ -7,8 +7,7 @@
 
 // {
 //   let str = "This is Javascript String Method."
-//          //  012345678901234567890123456789012
-//          //  123456789012345678901234567890123
+
 
 //   let atmethod = str.at(0)
 //   let atmethod1 = str.at(20)
