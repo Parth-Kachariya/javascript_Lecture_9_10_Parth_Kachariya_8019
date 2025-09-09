@@ -1,16 +1,17 @@
 // Conditional Statements
 {
-  let choice = parseInt(prompt("Enter Your Choice"));
   let password = 123456;
   let balance = 100000;
   console.log("=============================================\n");
-  console.log("------Balance Check------");
-  console.log("------Money Withdraw------");
-  console.log("------Money  deposit------");
-  console.log("------Account Check (Block / Active)------");
-  console.log("------Set/Change ATM PIN------");
-  console.log("------Delete Account------");
+  // alert("------Balance Check------");
+  // console.log("------Balance Check------");
+  // console.log("------Money Withdraw------");
+  // console.log("------Money  deposit------");
+  // console.log("------Account Check (Block / Active)------");
+  // console.log("------Set/Change ATM PIN------");
+  // console.log("------Delete Account------");
   console.log("=============================================\n");
+  let choice = parseInt(prompt(" 1.Balance Check\n 2.Money Withdraw\n3.Money  deposit\n4.Account Check (Block / Active)\n5.Set/Change ATM PIN\n6.Delete Account\nEnter Your Choice \n"));
 
   switch (choice) {
     // Balance Check
@@ -60,10 +61,7 @@
 
           if (100 <= deposit) {
             balance += deposit;
-            console.log(
-              " Money  deposit  Successful. deposit added Balance: ₹",
-              balance
-            );
+            console.log( " Money  deposit  Successful. deposit added Balance: ₹", balance);
           } else {
             console.log("You Have Entered an Amount Less Than ₹100!!");
           }
@@ -85,18 +83,14 @@
             console.log("Your Account Is Active");
           } else if (1000 <= livebalance) {
             console.log("!! increase your balance....\n");
-            console.log(
-              "if you don't increase your Balance, Your Account May be Blocked 15 days."
-            );
+            console.log("if you don't increase your Balance, Your Account May be Blocked 15 days.");
           } else {
             console.log("!! Account Is Blocked !!\n");
             console.log("!!please Activate your bank account. !!\n");
             console.log("!! Please deposit money. !!\n");
           }
         } else {
-          console.log(
-            "Invalid Password!! please Enter Your Correct Password\n"
-          );
+          console.log("Invalid Password!! please Enter Your Correct Password\n" );
         }
       }
       break;
