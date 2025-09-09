@@ -80,15 +80,17 @@
       {
         let pin = parseInt(prompt("Enter your Password"));
         if (pin === password) {
-          if (2000 <= balance) {
+          let livebalance=parseInt(prompt("Enter your live balance"));
+          if (2000 <= livebalance) {
             console.log("Your Account Is Active");
-          } else if (1000 <= balance) {
+          } else if (1000 <= livebalance) {
             console.log("!! increase your balance....\n");
             console.log(
               "if you don't increase your Balance, Your Account May be Blocked 15 days."
             );
           } else {
             console.log("!! Account Is Blocked !!\n");
+            console.log("!!please Activate your bank account. !!\n");
             console.log("!! Please deposit money. !!\n");
           }
         } else {
