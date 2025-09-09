@@ -2,14 +2,7 @@
 {
   let password = 123456;
   let balance = 100000;
-  console.log("=============================================\n");
-  // alert("------Balance Check------");
-  // console.log("------Balance Check------");
-  // console.log("------Money Withdraw------");
-  // console.log("------Money  deposit------");
-  // console.log("------Account Check (Block / Active)------");
-  // console.log("------Set/Change ATM PIN------");
-  // console.log("------Delete Account------");
+  
   console.log("=============================================\n");
   let choice = parseInt(prompt(" 1.Balance Check\n 2.Money Withdraw\n3.Money  deposit\n4.Account Check (Block / Active)\n5.Set/Change ATM PIN\n6.Delete Account\nEnter Your Choice \n"));
 
