@@ -2,12 +2,7 @@
 
 // The Math namespace object contains static properties and methods for mathematical constants and functions.
 
-{
-  // Math.E
 
-  let math = Math.E;
-  console.log(math);
-}
 // Math.E;
 // Math.Pow();
 // Math.ceil();
@@ -26,7 +21,16 @@
 // Math.cos();
 // Math.tan();
 {
+  // Math.E
+console.log("Math.E");
+
+  let math = Math.E;
+  console.log(math);
+}
+
+{
   //Math.PI
+console.log("Math.PI");
 
   let math = Math.PI;
   console.log(math);
@@ -34,30 +38,34 @@
 
 {
   // Math.Pow()
+console.log("Math.Pow()");
 
-  let math = Math.pow(4, 5);
+  let math = Math.pow(4, 3);
 
   console.log(math);
 }
 
 {
   // Math.ceil()
+console.log("Math.ceil()");
 
-  let math = Math.ceil(23.01);
+  let math = Math.ceil(22.01);
 
   console.log(math);
 }
 
 {
   // Math.floor()
+console.log("Math.floor()");
 
-  let math = Math.floor(-45.5);
+  let math = Math.floor(45.3);
 
   console.log(math);
 }
 
 {
   // Math.trunc()
+console.log("Math.trunc()");
 
   let math = Math.trunc(-78.9);
 
@@ -71,12 +79,16 @@
 
   let newarray = [...arr];
 
-  console.log(typeof arr);
+  // console.log(typeof arr);
 
   // console.log(newarray);
 
   // let math = Math.max(45 , 12 , 1 , 89 , 101 , 576)
+  console.log("Math.max()");
+  
   let math = Math.max(...newarray);
+  console.log("Math.min()");
+  
   let math1 = Math.min(45, 12, 1, 89, 101, 576);
 
   console.log(math);
@@ -85,6 +97,7 @@
 
 {
   // Math.sqrt()
+console.log(" Math.sqrt()");
 
   let math = Math.sqrt(625);
 
@@ -93,6 +106,10 @@
 
 {
   // Math.log() / Math.log2() / Math.log10()
+console.log("Math.log()");
+console.log("Math.log2()");
+console.log("Math.log10()");
+
 
   let math = Math.log(10);
   let math1 = Math.log2(10);
@@ -105,6 +122,7 @@
 
 {
   // Math.random()
+console.log("Math.random()");
 
   let math = Math.floor(Math.random() * 10000);
 
@@ -113,6 +131,7 @@
 
 {
   // Math.sign()
+console.log("Math.sign()");
 
   let math = Math.sign();
 
@@ -121,6 +140,7 @@
 
 {
   // Math.abs()
+console.log("Math.abs()");
 
   let math = Math.abs(-45.45);
 
@@ -131,8 +151,9 @@
   // Math.sin() / Math.cos() / Math.tan()
 
   // let math = degree * Math.PI / 180
-
-  // let math =  Math.sin(90 * Math.PI / 180)
+console.log("Math.sin()");
+let math =  Math.sin(90 * Math.PI / 180)
+console.log("Math.cos()");
 
   let mathcos = Math.cos((90 * Math.PI) / 180);
 
@@ -142,6 +163,7 @@
 
 {
   // Math.round()
+console.log(" Math.round()");
 
   let math = Math.round(21.53);
 
