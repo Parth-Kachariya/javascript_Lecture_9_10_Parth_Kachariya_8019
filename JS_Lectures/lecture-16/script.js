@@ -10,6 +10,14 @@
   language("tailwind")
 }
 
+{
+  function addition(a,b,c){
+    return a+b+c;
+  }
+  let ans =addition(10,10,10);
+  console.log(ans);
+  
+}
 // {
 //   function calc(a , b){
 //     return a * b
