@@ -1,9 +1,9 @@
-let subjects = ["Maths", "Science", "English", "History", "Computer"];
+let subjects = ["Maths", "Science", "English", "Gujarati", "Computer"];
 let marks = [];
 let studentDetails = {
-  name: "Parth",
+  name: "vijay",
   class: "10th",
-  rollNo: 21,
+  rollNo: 30,
 };
 
 // ---------- User Input for Marks ----------
