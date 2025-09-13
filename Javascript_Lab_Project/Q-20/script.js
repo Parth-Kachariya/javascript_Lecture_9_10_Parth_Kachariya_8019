@@ -3,12 +3,8 @@
 {
   let num1 = parseFloat(prompt("Enter No1."));
   let num2 = parseFloat(prompt("Enter No2."));
-  console.log("-----Press 1 for Addition-----");
-  console.log("-----Press 2 for subtraction-----");
-  console.log("-----Press 3 for division-----");
-  console.log("-----Press 4 for multiplication-----");
-  console.log("-----Press 5 for modulo-----");
-  let ch = parseInt(prompt("Enter choice."));
+
+  let ch = parseInt(prompt("\n====================\n-----Press 1 for Addition-----\n-----Press 2 for subtraction-----\n-----Press 3 for division-----\n-----Press 4 for multiplication-----\n-----Press 5 for modulo-----\n====================\n\n\nEnter choice."));
   switch (ch) {
     case 1:
         console.log("'+'Addition :",num1,num2,num1+num2);
