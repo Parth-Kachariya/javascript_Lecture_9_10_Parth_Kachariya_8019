@@ -112,3 +112,36 @@ console.log("---------------------------------");
   }
   console.log("---------------------------------");
 }
+/* 11. split(separator, limit) 
+  Use: Splits a string into an array by the given separator. */
+{
+  let str = "kachariya";
+  console.log(str.split(""));
+  console.log(str.split("", 4));
+  console.log("---------------------------------");
+}
+/* 12. startsWith(searchString, position) 
+   Use: Checks if a string starts with the given substring. */
+{
+  let str = "parth Kachariya";
+  console.log(str.startsWith("parth"));
+  console.log(str.startsWith("Kachariya", 6));
+  console.log("---------------------------------");
+}
+// 13. substring(start, end)
+// Use: Returns part of a string between start and end indexes.
+{
+  let str = "kachariya";
+  console.log(str.substring(1, 5));
+  console.log("---------------------------------");
+
+}
+/* 14. slice(start, end) 
+  Use: Extracts part of a string and returns it. */
+{
+    let str = "parth Kachariya";
+    console.log(str.slice(0, 8));
+    console.log(str.slice(-9));
+  console.log("---------------------------------");
+
+}
