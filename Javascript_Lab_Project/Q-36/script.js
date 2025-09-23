@@ -8,4 +8,5 @@
   result.sort();
   // let sortStr = result.join(" ");
   console.log(result);
+  // console.log(sortStr);
 }
