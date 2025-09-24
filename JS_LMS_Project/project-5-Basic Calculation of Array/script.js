@@ -34,7 +34,7 @@
     return max;
   }
   // min function
-  function min(arr) {
+  let min = (arr) => {
     let min = arr[0];
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] < min) {
@@ -42,7 +42,8 @@
       }
     }
     return min;
-  }
+  };
+
   // even number function
   function even(arr) {
     console.log("The even number of the array elements is:");
@@ -63,7 +64,10 @@
   }
 
   let choice = parseFloat(
-    prompt( "\nChoose an operation:\n1. Sum\n2. Average\n3. max\n4. min\n5. even\n6.odd\nEnter your choice (1/2/3/4):"));
+    prompt(
+      "\nChoose an operation:\n1. Sum\n2. Average\n3. max\n4. min\n5. even\n6.odd\nEnter your choice (1/2/3/4/5/6):"
+    )
+  );
   switch (choice) {
     case 1:
       console.log("The sum of the array elements is:", Sum(arr));
@@ -78,12 +82,12 @@
       console.log("The min of the array elements is:", min(arr));
       break;
     case 5:
-      even(arr)
+      even(arr);
       break;
     case 6:
       odd(arr);
       break;
-      default:
+    default:
       console.log("Invalid choice! Please select a valid operation.");
       break;
   }
