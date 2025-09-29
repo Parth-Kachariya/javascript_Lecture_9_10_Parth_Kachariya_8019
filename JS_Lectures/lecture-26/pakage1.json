@@ -1,0 +1,10 @@
+{
+    "data":[
+        {
+            "name": "vishal",
+            "email": "vishal@gmail.com",
+            "course": "full-stack development",
+            "age": 22
+        }
+    ]
+}

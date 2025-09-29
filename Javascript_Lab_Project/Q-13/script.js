@@ -8,7 +8,12 @@
         if (num % i == 0)
             break;
     }
-    num == i ? console.log("Prime") : console.log("Not Prime");
+    if(num==i){
+        console.log("Prime");
+    }
+    else{
+        console.log("Not Prime");
+    }
 }
 
 
