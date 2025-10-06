@@ -1,92 +1,96 @@
 
 // Javascript Functions and Function Expression
 
-// {
-//   function greet(){
-//     console.log("Hello World!!!");
-//   }
+{
+  function world(){
+    console.log("Hello World!!!");
+  }
   
-//   greet()
-// }
+  world()
+}
 
-// {
+{
   // Function with Expression
   
-//   let funcDis = function(){
-//     console.log(Math.PI);
-//   }
+  let funcex = function(){
+    console.log(Math.random());
+  }
   
-//   funcDis()
-// }
+  funcex()
+}
 
 {
   // Javascript Callback Function
 
-  // function greet(func){
-  //   console.log("Hello World!!");
-  //   func()
-  // }
+  function add(func){
+    console.log("Hello World!!");
+    func()
+  }
 
-  // function sum(){
-  //   console.log(10+20);
-  // }
+  function sum(){
+    console.log(20+20);
+  }
 
-  // greet(sum)
+  add(sum)
 }
 
-// {
+{
   // Timing Function
 
   // Javascript SetTimeout()
+  // after 3 seconds run callback function
 
-//   function greet(){
-//     console.log("Hello Javascript!!");
+
+  function print(){
+    console.log("Hello Javascript!!");
     
-//   }
+  }
 
-//   let setTimeoutId = setTimeout(greet , 3000)
+  let setTimeoutId = setTimeout(print , 3000)
 
-//   console.log(setTimeoutId);
+  console.log(setTimeoutId);
 
-//   console.log("setTimeout Function");
+  console.log("setTimeout Function");
   
-// }
+}
 
-// {
-  // every 5 seconds
+{
+  // every 1 seconds
 
-//   function timeShow(){
+  // print  repeatly after 1 seconds
 
-//     let date = new Date()
+  function timeShow(){
 
-//     let time = date.toLocaleTimeString();
+    let date = new Date()
 
-//     console.log(time);
+    let time = date.toLocaleTimeString();
+
+    console.log(time);
     
-//     setTimeout(timeShow , 1000)
-//   }
+    setTimeout(timeShow , 1000)
+  }
 
-//   timeShow()
-// }
+  timeShow()
+}
 
 
-// {
+{
  // javascript clearTimeout()
 
-//   let count = 0
+  // let count = 0
 
-//   function increaseTime(){
-//     count+=1
-//     console.log(count)
-//   }
+  // function increaseTime(){
+  //   count+=1
+  //   console.log(count)
+  // }
 
-//   let id = setTimeout(increaseTime , 2000)
+  // let id = setTimeout(increaseTime , 2000)
 
-//   clearTimeout(id)
+  // clearTimeout(id)
 
-//   console.log("stop timing function");
+  // console.log("stop timing function");
   
-// }
+}
 
 {
   // javascript setInterval() Function
