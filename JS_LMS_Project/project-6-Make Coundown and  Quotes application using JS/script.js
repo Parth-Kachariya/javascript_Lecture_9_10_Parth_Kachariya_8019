@@ -28,3 +28,52 @@
       }
     }
 
+    // timer js
+    let totalSeconds = 0;
+let timerInterval = null;
+
+function updateTimer() {
+  let minutes = Math.floor(totalSeconds / 60);
+  let seconds = totalSeconds % 60;
+
+  document.getElementById('minutes').textContent = minutes < 10 ? '0' + minutes : minutes;
+  document.getElementById('seconds').textContent = seconds < 10 ? '0' + seconds : seconds;
+
+  if (totalSeconds <= 0 && timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    alert("Time's up!"); // Alert only when timer ends
+  } else {
+    totalSeconds--;
+  }
+}
+
+function startTimer() {
+  // Stop any running timer
+  if (timerInterval) clearInterval(timerInterval);
+
+  // Read user input and convert to total seconds
+  let mins = parseInt(document.getElementById('inputMinutes').value) || 0;
+  let secs = parseInt(document.getElementById('inputSeconds').value) || 0;
+
+  // Only start if input time > 0
+  if (mins === 0 && secs === 0) return;
+
+  totalSeconds = mins * 60 + secs;
+
+  updateTimer(); // show immediately
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timerInterval);
+  timerInterval = null;
+}
+
+// Initialize display at 00:00
+function initializeTimer() {
+  totalSeconds = 0;
+  updateTimer();
+}
+
+initializeTimer();
