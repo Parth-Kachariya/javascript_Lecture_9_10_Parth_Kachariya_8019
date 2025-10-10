@@ -93,25 +93,83 @@
     function old_name() {
       console.log("hello" + " " + name1);
     }
-    return old_name
+    return old_name;
   }
-  let result=name("ajay")
+  let result = name("ajay");
   console.log(result());
-  
 }
 {
-  function data(){
-    this.name="vijay"
-    this.age=26
-    this.gender="male"
-    this.id=2468
+  function data() {
+    this.name = "vijay";
+    this.age = 26;
+    this.gender = "male";
+    this.id = 2468;
   }
-  let profile=new data()
+  let profile = new data();
   console.log(profile.name);
   console.log(profile.age);
   console.log(profile.gender);
   console.log(profile.id);
   console.log(profile);
-  
-  
+}
+{
+  function person_data() {
+    this.name = "vijay";
+    this.city = "Surat";
+    this.pin = 224466;
+    this.job = "Software engineer";
+    this.roll = "employee";
+  }
+
+  let personal_data = new person_data();
+  console.log("-----------------------------------");
+  console.log(personal_data.name);
+  console.log("-----------------------------------");
+  console.log(personal_data.city);
+  console.log("-----------------------------------");
+  console.log(personal_data.pin);
+  console.log("-----------------------------------");
+  console.log(personal_data.job);
+  console.log("-----------------------------------");
+  console.log(personal_data.roll);
+  console.log("-----------------------------------");
+  console.log(personal_data);
+  console.log("-----------------------------------");
+}
+{
+  function data(name, city, pin, job, roll) {
+    function person_data() {
+      this.name = "vijay";
+      this.city = city;
+      this.pin = pin;
+      this.job = job;
+      this.roll = roll;
+    }
+
+    let personal_data = new person_data();
+    console.log("-----------------------------------");
+    console.log(personal_data.name);
+    console.log("-----------------------------------");
+    console.log(personal_data.city);
+    console.log("-----------------------------------");
+    console.log(personal_data.pin);
+    console.log("-----------------------------------");
+    console.log(personal_data.job);
+    console.log("-----------------------------------");
+    console.log(personal_data.roll);
+    console.log("-----------------------------------");
+    console.log(personal_data);
+    console.log("-----------------------------------");
+  }
+  data("ajay", "Surat", 224466, "Software engineer", "HR");
+}
+{
+  function upper(name) {
+    function lower(age) {
+      console.log("hello"+" " + name +" "+","+" "+ "your"+" "+"age"+" "+"is"+" " + age);
+    }
+    lower(24);
+  }
+    upper("vishal");
+
 }
