@@ -23,3 +23,6 @@ box-shadow: none !important;
 .box-shadow{
     box-shadow: none !important;
 }
+.cursor{
+    cursor: pointer;
+}
