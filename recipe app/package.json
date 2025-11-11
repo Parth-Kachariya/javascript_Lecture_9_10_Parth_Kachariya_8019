@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "json": "^11.0.0",
+    "server": "^1.0.42",
+    "tailwindcss": "^4.1.17"
+  }
+}

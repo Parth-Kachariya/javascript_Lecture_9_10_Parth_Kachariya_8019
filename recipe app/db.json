@@ -1,0 +1,142 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "dishName": "Sandwich",
+      "image": "./asset/images/veg-grilled-sandwich.png",
+      "ingredients": [
+        "4 bread slices",
+        "1 cucumber (sliced)",
+        "1 tomato (sliced)",
+        "1 onion (sliced)",
+        "2 tbsp green chutney",
+        "Butter as needed",
+        "Salt and pepper to taste",
+        "Cheese slice (optional)"
+      ],
+      "instructions": [
+        "Spread butter on the bread slices.",
+        "Apply green chutney on the other side of each slice.",
+        "Place cucumber, tomato, and onion slices on one bread piece.",
+        "Sprinkle salt and pepper on top.",
+        "Add cheese slice if desired.",
+        "Cover with another bread slice to make the sandwich.",
+        "Toast, grill, or serve plain."
+      ]
+    },
+    {
+      "id": 2,
+      "dishName": "Masala Dosa",
+      "image": "./asset/images/pngtree-masala-dosa.png",
+      "ingredients": [
+        "2 cups rice",
+        "1 cup urad dal",
+        "1/2 tsp fenugreek seeds",
+        "2 boiled potatoes",
+        "1 onion (sliced)",
+        "1 tsp mustard seeds",
+        "1/2 tsp turmeric powder",
+        "Salt to taste",
+        "Oil for cooking"
+      ],
+      "instructions": [
+        "Soak rice, dal, and fenugreek seeds overnight, then grind to a smooth batter.",
+        "Ferment the batter for 6–8 hours.",
+        "Prepare potato filling by sautéing onions, adding turmeric, salt, and mashed potatoes.",
+        "Heat a tawa, spread a ladle of batter into a thin dosa.",
+        "Place some potato filling inside and fold.",
+        "Serve hot with coconut chutney and sambar."
+      ]
+    },
+    {
+      "id": 3,
+      "dishName": "Bajarano Rotlo",
+      "image": "./asset/images/bajaranorotalo.jpg",
+      "ingredients": [
+        "2 cups bajra flour",
+        "Warm water as needed",
+        "Salt to taste",
+        "Ghee for serving"
+      ],
+      "instructions": [
+        "Mix bajra flour with salt.",
+        "Slowly add warm water and knead into a soft dough.",
+        "Take a portion of dough and flatten by hand into a thick roti.",
+        "Cook on a hot tawa until brown spots appear.",
+        "Apply ghee and serve hot with garlic chutney or curd."
+      ]
+    },
+    {
+      "id": 4,
+      "dishName": "Olo (Baingan Bharta)",
+      "image": "./asset/images/baingan-bharta.png",
+      "ingredients": [
+        "1 large brinjal (eggplant)",
+        "2 tomatoes (chopped)",
+        "1 onion (chopped)",
+        "2 green chilies (chopped)",
+        "1 tsp ginger-garlic paste",
+        "1 tsp red chili powder",
+        "Salt to taste",
+        "2 tbsp oil",
+        "Fresh coriander (for garnish)"
+      ],
+      "instructions": [
+        "Roast the brinjal directly on flame until the skin blackens.",
+        "Peel the skin and mash the pulp.",
+        "Heat oil, sauté onions until golden.",
+        "Add ginger-garlic paste, tomatoes, and spices.",
+        "Add mashed brinjal and mix well.",
+        "Cook for 5–7 minutes and garnish with coriander.",
+        "Serve hot with bajra rotlo."
+      ]
+    },
+    {
+      "id": 5,
+      "dishName": "Desi Churmu",
+      "image": "./asset/images/Churma.png",
+      "ingredients": [
+        "3 bajra or wheat rotis (crushed)",
+        "4 tbsp ghee",
+        "3 tbsp jaggery (grated)",
+        "2 tbsp sugar (optional)",
+        "Cardamom powder (a pinch)",
+        "Dry fruits (optional)"
+      ],
+      "instructions": [
+        "Crush the rotis into a coarse powder.",
+        "Heat ghee and melt jaggery in it.",
+        "Mix melted jaggery into the crushed roti mixture.",
+        "Add sugar, cardamom powder, and dry fruits if desired.",
+        "Mix well until everything combines.",
+        "Serve warm as a traditional sweet dish."
+      ]
+    },
+    {
+      "id": 6,
+      "dishName": "Dal Baati",
+      "image": "./asset/images/dal-bati.png",
+      "ingredients": [
+        "2 cups wheat flour",
+        "4 tbsp ghee",
+        "Salt to taste",
+        "Water (for dough)",
+        "1 cup mixed dal (toor, moong, masoor)",
+        "1 tomato (chopped)",
+        "1 tsp turmeric",
+        "1 tsp red chili powder",
+        "1 tsp cumin seeds",
+        "Ghee for serving"
+      ],
+      "instructions": [
+        "Mix wheat flour, salt, and ghee; knead into a firm dough.",
+        "Shape into medium-sized balls (baati).",
+        "Bake or roast baatis until golden and crispy.",
+        "Cook mixed dal with turmeric and salt.",
+        "Prepare tadka with ghee, cumin seeds, tomatoes, and spices, then mix into dal.",
+        "Crush hot baati and pour ghee on top.",
+        "Serve with hot dal."
+      ]
+    }
+  ]
+}
