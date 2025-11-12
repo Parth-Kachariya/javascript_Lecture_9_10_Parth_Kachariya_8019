@@ -12,57 +12,60 @@
         Welcome To Recipe Hub
       </h1>
       <div class="flex">
-        <div class="bg-gray-400 h-[470px] my-10 w-[35%]  mx-5 border-3 border-orange-600 rounded-xl overflow-auto me-5">
+        <div class="bg-gray-400 h-[470px] my-10   mx-5 border-3 border-orange-600 rounded-xl overflow-auto me-5">
           <div class="flex justify-between">
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/veg-grilled-sandwich.png" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+              <h2 class="font-semibold mb-3 ">Mango Salsa Chicken</h2>
+              <button id="btn1" class="p-2  px-5 bg-green-400  mt-10 rounded-xl font-bold cursor-pointer" >Get Recipee</button>
             </div>
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/pngtree-masala-dosa.png" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+              <h2 class="font-semibold mb-3 ">Quinoa Salad with Avocado</h2>
+              <button id="btn2"  class="p-2 px-5  bg-green-400 mt-10  rounded-xl font-bold cursor-pointer">Get Recipee</button>
 
             </div>
           </div>
            <div class="flex justify-between">
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/bajaranorotalo.jpg" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+              
+              <h2 class="font-semibold mb-3 ">Tomato Basil Bruschetta</h2>
+              <button id="btn3"  class="p-2 px-5  bg-green-400 mt-10  rounded-xl font-bold cursor-pointer">Get Recipee</button>
               
             </div>
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/baingan-bharta.png" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+              
+              <h2 class="font-semibold mb-3 ">Beef and Broccoli Stir-Fry</h2>
+              <button id="btn4"  class="p-2 px-5  bg-green-400 mt-10  rounded-xl font-bold cursor-pointer">Get Recipee</button>
 
             </div>
           </div>
           <div class="flex justify-between">
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/Churma.png" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+               <h2 class="font-semibold mb-3 ">Caprese Salad</h2>
+              <button id="btn5"  class="p-2 px-5  bg-green-400 mt-15  rounded-xl font-bold cursor-pointer">Get Recipee</button>
 
             </div>
-            <div class="w-50 h-50 bg-gray-200 m-4 rounded-lg border-3 border-orange-600">
-              <img src="./asset/images/dal-bati.png" alt="">
-              <h2>Sandwich</h2>
-              <button>Get Recipee</button>
+            <div class=" bg-green-200 w-50 h-50 m-4 rounded-lg border-3 border-orange-600 p-5">
+              <h2 class="font-semibold mb-3 ">Shrimp Scampi Pasta</h2>
+              <button id="btn6"  class="p-2 px-5   bg-green-400 mt-10  rounded-xl font-bold cursor-pointer">Get Recipee</button>
 
             </div>
           </div>
         </div>
-       <!--  -->
-        <div  class="w-[60%] bg-gray-400  border-2 border-orange-600 rounded-xl my-10 p-10 ">
-            <!-- <div class="w-100 bg-gray-700  border-2 border-orange-600 rounded-xl m-10 p-5 "> -->
-                
-
-            </div>
+        <!-- recipe area -->
+        <div  class="w-[68%] h-100 overflow-auto bg-gray-400  border-2 border-orange-600 rounded-xl my-10 p-10 ">
+          <div id="loading" class="object-none  font-bold mt-6 text-2xl">
+          Loading . . . . . . .
+          </div>
+        <div id="recipebox" class="mt-6 p-4 border rounded hidden  ">
+        <h2 id="recipeName" class="text-xl font-semibold"></h2>
+        <img id="image" class="w-64 rounded my-3" />
+        <ul id="Ingredients" class="list-disc ml-6"></ul>
+        <p id="Instructions" class="mt-2"></p>
+        </div>
+        </div>
         </div>
      
     </div>
+    <script  src="./js/script.js"></script>
   </body>
 </html>
