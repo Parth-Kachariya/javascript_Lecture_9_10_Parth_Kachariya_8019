@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-8-Corona API</title>
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- flowbite CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-lg w-full bg-white rounded-2xl shadow-xl p-6">
+      <h1 class="text-2xl font-bold text-center mb-4 text-blue-600">
+        Corona API 
+      </h1>
+
+      <!-- Input box -->
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2 font-medium"
+          >Enter Country Name</label
+        >
+        <input
+          id="Input"
+          type="text"
+          placeholder="Search country"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-1 focus:ring-blue-400 outline-none "
+        />
+      </div>
+
+      <!-- Button -->
+      <button
+        id="getresult"
+        class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition cursor-pointer"
+      >
+        Get Data
+      </button>
+
+      <!-- Result Box -->
+      <div
+        id="result"
+        class="hidden mt-6 bg-gray-300 block  p-6 border border-default rounded-lg shadow-xs"
+      >
+      
+      </div>
+        <div
+         id="error"
+         class="mt-6  ">
+        </div>
+
+    </div>
+    <!-- flowbite js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
