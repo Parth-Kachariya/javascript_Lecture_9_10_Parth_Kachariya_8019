@@ -30,7 +30,7 @@
             <div class="bg-white block  p-6 border border-default rounded-lg shadow-xs">
             <h2 class="text-center mb-3 font-bold text-2xl">COVID-19 Report</h2>
             <img class="rounded-lg w-50 mx-auto" src="${data.countryInfo.flag}" alt="" />
-            <h4 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-2xl text-center"> ${data.country}</h4>
+            <h4 class="mt-4 mb-2 font-bold tracking-tight text-2xl text-center"> ${data.country}</h4>
            
             <div class="mt-4 grid grid-cols-1 gap-3">
 

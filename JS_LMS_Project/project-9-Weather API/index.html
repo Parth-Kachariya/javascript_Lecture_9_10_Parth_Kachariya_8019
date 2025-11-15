@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-9-Weather API</title>
+    <!--tailwind css CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- flowbite CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-xl w-full bg-white rounded-2xl shadow-xl p-6">
+      <h1 class="text-4xl font-bold text-center mb-4 text-blue-600">
+        🌤 Weather App
+      </h1>
+
+      <!-- Input box -->
+      <div class="flex gap-3 align-center">
+        <div class="mb-4">
+          <input
+            id="Input"
+            type="text"
+            placeholder="Enter City ..."
+            class="w-90 border border-gray-300 rounded-lg px-4 py-2 focus:ring-1 focus:ring-blue-400 outline-none"
+          />
+        </div>
+
+        <!-- Button -->
+        <div>
+          <button
+            id="getresult"
+            class="w-40 bg-blue-600 font-bold text-white block rounded-lg py-2 hover:bg-blue-700 transition cursor-pointer"
+          >
+            Get Data
+          </button>
+        </div>
+      </div>
+
+      <!-- Result Box -->
+      <div
+        id="result"
+        class="hidden mt-6 bg-gray-300 p-6 border border-default rounded-lg shadow-xs"
+      ></div>
+      <div id="error" class="mt-6"></div>
+    </div>
+    <!-- flowbite js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
