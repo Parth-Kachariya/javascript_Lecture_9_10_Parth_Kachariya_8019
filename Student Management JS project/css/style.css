@@ -30,3 +30,9 @@ box-shadow: none !important;
     overflow-x: auto !important;
      width: 100% !important;
 }
+input ,select{
+    box-shadow: none !important;
+}
+.outlline:focus{
+    outline: none !important;
+}

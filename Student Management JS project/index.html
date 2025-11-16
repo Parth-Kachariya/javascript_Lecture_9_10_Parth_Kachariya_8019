@@ -26,114 +26,82 @@
   </head>
   <body>
     <div class="container">
-      <!-- form -->
-      <div>
-        <h1 class="text-center text-primary fw-bold">Student Management</h1>
-        <form action="">
-          <div>
-            <label for="name">name</label>
-            <input type="text" id="name" placeholder=" name" />
-          </div>
-          <div>
-            <label for="Email">Email</label>
-            <input type="Email" id="Email" placeholder=" email" />
-          </div>
-          <div>
-            <label for="age">age</label>
-            <input type="number" id="age" placeholder=" age" />
-          </div>
-          <div>
-            <label for="grid">grid</label>
-            <input type="text" id="grid" placeholder=" grid" />
-          </div>
-          <div>
-            <div class="d-flex gap-4 mt-4">
-              <label
-                for="gender"
-                class="block my-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Gender</label
-              >
-              <div class="d-flex items-center gap-1">
-                <label
-                  for="male"
-                  class="my-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Male</label
-                >
-                <input
-                  type="radio"
-                  name="gender"
-                  id="male"
-                  class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
-                />
-              </div>
-              <div class="d-flex items-center gap-1">
-                <label
-                  for="female"
-                  class="my-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Female</label
-                >
-                <input
-                  type="radio"
-                  name="gender"
-                  id="female"
-                  class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
-                />
-              </div>
-            </div>
-            <div>
-              <div>
-                <label
-                  for="courses"
-                  class="block my-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Select your course</label
-                >
-                <select
-                  id="courses"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                >
-                  <option>BCA</option>
-                  <option>MCA</option>
-                  <option>BSC IT</option>
-                  <option>DIPLOMA</option>
-                  <option>FULL STACK DEVELOPMENT</option>
-                  <option>AI / ML</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label
-                for="department"
-                class="block my-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Department</label
-              >
-              <input
-                type="text"
-                id="department"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              />
-            </div>
-            <div>
-              <label
-                for="mobile"
-                class="block my-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Mobile No</label
-              >
-              <input
-                type="tel"
-                id="mobile"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              />
-            </div>
-            <div>
-              <button
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
+      <!-- form start -->
+     <div class="card shadow p-4 px-5 mx-auto my-4 rounded-3 w-50" >
+    <h3 class="text-center mb-4">Student Registration Form</h3>
+
+    <form>
+
+      <!-- Name -->
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" required />
       </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+
+      <!-- Age -->
+      <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" class="form-control" placeholder="Enter your age" required />
+      </div>
+
+      <!-- GRID -->
+      <div class="mb-3">
+        <label class="form-label">GRID</label>
+        <input type="text" class="form-control" placeholder="Enter your GRID" required />
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-3">
+        <label class="form-label d-block">Gender</label>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="gender" class="form-check-input" value="Male">
+          <label class="form-check-label">Male</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="gender" class="form-check-input" value="Female">
+          <label class="form-check-label">Female</label>
+        </div>
+      </div>
+
+      <!-- Course -->
+      <div class="mb-3">
+        <label class="form-label">Select your Course</label>
+        <select class="form-select">
+          <option selected disabled>Select course</option>
+          <option>BCA</option>
+          <option>MCA</option>
+          <option>BBA</option>
+          <option>BSc IT</option>
+          <option>MBA</option>
+        </select>
+      </div>
+
+      <!-- Department -->
+      <div class="mb-3">
+        <label class="form-label">Department</label>
+        <input type="text" class="form-control" placeholder="Enter department" required />
+      </div>
+
+      <!-- Mobile -->
+      <div class="mb-3">
+        <label class="form-label">Mobile No</label>
+        <input type="tel" class="form-control" placeholder="Enter mobile number" required />
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+    </form>
+  </div>
+  <!-- form End -->
       <div>
         <div
           class="d-flex align-items-center justify-content-between py-2 px-3"
@@ -204,9 +172,10 @@
               ></a>
             </div>
           </div>
+          <!-- search bar -->
           <div>
             <input
-              class="rounded-1 outlline border-1 border-black py-1 px-3"
+              class="rounded-1 outlline border-2 border-primary py-1 px-3"
               type="text"
               placeholder="Search "
             />
