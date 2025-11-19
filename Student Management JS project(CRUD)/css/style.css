@@ -1,38 +1,5 @@
-.width{
-    width: 35px !important;
-    /* height: 16px !important; */
-}
-input:focus{
-    outline: 1px solid gray !important; 
-}
-.btn{
-box-shadow: none !important;
-}
-.bg-color{
-    background-color: #10192b !important;
-}
-.btn-close{
-    box-shadow: none !important;
-}
-.pt-6{
-    padding-top: 140px;
-}
-.w-15{
-    width: 60px;
-}
-.box-shadow{
-    box-shadow: none !important;
-}
-.cursor{
-    cursor: pointer;
-}
-.responsive{
-    overflow-x: auto !important;
-     width: 100% !important;
-}
-input ,select{
-    box-shadow: none !important;
-}
-.outlline:focus{
-    outline: none !important;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
