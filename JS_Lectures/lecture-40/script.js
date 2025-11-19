@@ -74,7 +74,8 @@ $(function(){
   })
   $(function(){
     $('#slideToggle').click(() => {
-      $('#panel').slideToggle("slow")
+      // $('#panel').slideToggle("slow")
+      $("#panel").slideToggle("slow")
     })
   })
 }
