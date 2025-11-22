@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="bg-blue-200  pt-2 sticky top-0 z-40">
       <div
-        class="max-w-[1320px]  border-2 border-b-transparent  border-y-white border-x-transparent rounded-lg mx-auto px-6 py-4 flex justify-between shadow-2xl">
+        class="max-w-[1320px]  border-y-2   border-y-white border-x-transparent rounded-lg mx-auto px-6 py-4 flex justify-between shadow-2xl">
         <div>
           <a href="">
             <h1
@@ -116,6 +116,82 @@
       </div>
     </section>
   </main>
+
+    <section class="max-w-[1320px] mx-auto " >
+      <div class="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-xl shadow-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">Shopping Cart</h1>
+
+    <table class="min-w-full border border-gray-300 rounded-xl overflow-hidden">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="py-3 px-4 border">Image</th>
+          <th class="py-3 px-4 border">Product</th>
+          <th class="py-3 px-4 border">Price</th>
+          <th class="py-3 px-4 border">Quantity</th>
+          <th class="py-3 px-4 border">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <!-- Row 1 -->
+        <tr class="text-center">
+          <td class="border py-3 px-4">
+            <img src="https://via.placeholder.com/80" class="w-20 h-20 mx-auto rounded-lg">
+          </td>
+
+          <td class="border py-3 px-4 font-semibold">Product Name</td>
+
+          <td class="border py-3 px-4 text-green-600 font-bold">₹499</td>
+
+          <td class="border py-3 px-4">
+            <input type="number" value="1" min="1" class="w-16 p-1 border rounded">
+          </td>
+
+          <td class="border py-3 px-4">
+            <button class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+              Delete
+            </button>
+          </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr class="text-center">
+          <td class="border py-3 px-4">
+            <img src="https://via.placeholder.com/80" class="w-20 h-20 mx-auto rounded-lg">
+          </td>
+
+          <td class="border py-3 px-4 font-semibold">Another Product</td>
+
+          <td class="border py-3 px-4 text-green-600 font-bold">₹799</td>
+
+          <td class="border py-3 px-4">
+            <input type="number" value="2" min="1" class="w-16 p-1 border rounded">
+          </td>
+
+          <td class="border py-3 px-4">
+            <button class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+              Delete
+            </button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- Total -->
+    <div class="mt-6 flex justify-end">
+      <h2 class="text-xl font-bold">Total: <span class="text-green-600">₹1,298</span></h2>
+    </div>
+
+    <!-- Checkout Button -->
+    <div class="mt-4 flex justify-end">
+      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Checkout
+      </button>
+    </div>
+  </div>
+    </section>
 
   <!-- CART DRAWER -->
   <div id="cartDrawer"
