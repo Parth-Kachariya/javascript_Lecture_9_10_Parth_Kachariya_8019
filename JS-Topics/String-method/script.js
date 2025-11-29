@@ -24,7 +24,7 @@ console.log("---------------------------------");
   // Example:
   {
     let text = "Phk";
-    console.log(text.repeat(3));
+    console.log(text.repeat( 3 ));
     console.log("---------------------------------");
   }
 }
@@ -176,9 +176,11 @@ use:Replaces part of the string matched by regex*/
     let str = "parth Kachariya";
     console.log(str.charAt(3));
     console.log(str.charAt(10));
+    console.log("---------------------------------");
+
 }
 /* 19. charCodeAt(index) 
-  use Returns the UTF-16 code of the character at the given index. */
+  use: Returns the UTF-16 code of the character at the given index. */
 {
     let str = "parth Kachariya";
     console.log(str.charCodeAt(0));
