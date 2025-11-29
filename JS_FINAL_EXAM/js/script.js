@@ -103,7 +103,7 @@
 
         let stepsHTML = "";
         if (r.instructions) {
-          const steps = r.instructions.split("\n"); // Split by new line
+          const steps = r.instructions.split("\n"); 
           stepsHTML =
             "<ol class='list-decimal list-inside text-indigo-700 text-sm space-y-2 mt-2'>";
           steps.forEach((s) => {
