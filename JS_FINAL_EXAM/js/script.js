@@ -113,7 +113,7 @@
           });
           stepsHTML += "</ol>";
         }
-// print card
+        // print card
         card.innerHTML = `
     <div class="p-5 flex border border-indigo-600 flex-col gap-3">
 
