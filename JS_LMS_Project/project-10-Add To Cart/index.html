@@ -1,306 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PR-10-Add To Cart</title>
-  <!--tailwind css CDN  -->
+  <title>MyShop</title>
+
+  <!-- Tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- flowbite CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-blue-100">
-  <main class="ml-64 w-full mx-auto">
-    <!-- NAVBAR -->
-    <nav class="bg-blue-200  pt-2 sticky top-0 z-40">
-      <div
-        class="max-w-[1320px]  border-y-2   border-y-white border-x-transparent rounded-lg mx-auto px-6 py-4 flex justify-between shadow-2xl">
-        <div>
-          <a href="">
-            <h1
-              class="flex items-center p-2 bg-gray-200 border-2 rounded-2xl font-extrabold text-3xl text-blue-600 font-serif">
-              My Shope
-            </h1>
-          </a>
+<body class="bg-gradient from-blue-50 via-indigo-50 to-purple-50">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 backdrop-blur bg-white/70 shadow">
+  <div class="max-w-[1320px] mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex justify-between items-center w-full ">
+
+      <h1 class="text-3xl font-extrabold text-indigo-600">MyShop</h1>
+      <ul class="flex justify-center items-center gap-8 text-indigo-500 font-semibold text-lg  mx-10">
+        <li><a class="text-indigo-600 text-xl " href="">Home</a></li>
+        <li><a class="hover:text-indigo-600 hover:text-xl " href="">About</a></li>
+        <li><a class="hover:text-indigo-600 hover:text-xl " href="">Contact</a></li>
+      </ul>
+      <a class="font-bold p-1 bg-indigo-600 rounded-full text-white" href="">Profile</a>
+    </div>
+    
+  </div>
+</nav>
+
+<section class="max-w-[1320px] mx-auto px-6 py-10">
+  <div class="grid grid-cols-12 gap-8">
+
+    <!-- PRODUCTS -->
+    <div class="col-span-12 lg:col-span-8 grid sm:grid-cols-2 gap-8">
+
+      <!-- 1 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/wireless-speaker.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Portable Speaker</h3>
+        <p class="text-gray-500 text-sm">Deep bass portable speaker.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$69.99</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="1" data-name="Portable Speaker" data-price="69.99"
+            data-image="./asset/images/wireless-speaker.png">
+            Add to Cart
+          </button>
         </div>
-        <div class="hidden md:flex items-center">
-          <ul class="flex items-center gap-4">
-            <li class="p-2 text-lg font-semibold hover:text-blue-500 cursor-pointer">
-              <a href="">Home</a>
-            </li>
-            <li class="p-2 text-lg font-semibold text-blue-500 cursor-pointer">
-              <a href="">Products</a>
-            </li>
-            <li class="p-2 text-lg font-semibold hover:text-blue-500 cursor-pointer">
-              <a href="">Contact</a>
-            </li>
-          </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/smart-watch.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Smart Watch</h3>
+        <p class="text-gray-500 text-sm">Premium fitness watch</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$59.99</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="2" data-name="Smart Watch" data-price="59.99"
+            data-image="./asset/images/smart-watch.png">
+            Add to Cart
+          </button>
         </div>
-        <button id="openCart" class="relative cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-7 h-7 text-gray-700">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 
-                1.437M7.5 14.25h9.75m-12 0l1.5-6h12.621c.88 
-                0 1.537.83 1.33 1.69l-1.2 5a1.5 1.5 
-                0 01-1.456 1.06H9m-4.5 0H4.125M9 18.75a1.5 
-                1.5 0 11-3 0 1.5 1.5 0 013 0zm9.75 
-                0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-          </svg>
-          <span id="cartCount" class="absolute top-3 -right-2 rounded-full bg-red-600 text-white text-xs px-2">
-            0
-          </span>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/white-earbuds.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Wireless Earbuds</h3>
+        <p class="text-gray-500 text-sm">Noise cancelling</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$35.90</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="3" data-name="Wireless Earbuds" data-price="35.90"
+            data-image="./asset/images/white-earbuds.png">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/appliances.jpeg" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Electric Appliances</h3>
+        <p class="text-gray-500 text-sm">Devices using electricity</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$40.00</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="4" data-name="Electric Appliances" data-price="40.00"
+            data-image="./asset/images/appliances.jpeg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/lightbulb.jpg" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Light Bulb</h3>
+        <p class="text-gray-500 text-sm">Electric light source</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$30.80</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="5" data-name="Light Bulb" data-price="30.80"
+            data-image="./asset/images/lightbulb.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/single-phase-electric-motor-removebg-preview.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Single Phase Motor</h3>
+        <p class="text-gray-500 text-sm">4HP single phase motor</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$100.80</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="6" data-name="Single Phase Motor" data-price="100.80"
+            data-image="./asset/images/single-phase-electric-motor-removebg-preview.png">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/mouse.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Gaming Mouse</h3>
+        <p class="text-gray-500 text-sm">RGB gaming mouse</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$38.99</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="7" data-name="Gaming Mouse" data-price="38.99"
+            data-image="./asset/images/mouse.png">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="bg-white border rounded-2xl shadow-lg p-5">
+        <img src="./asset/images/electric-cable-removebg-preview.png" class="h-40 mx-auto"/>
+        <h3 class="text-lg font-bold mt-4">Electric Cable</h3>
+        <p class="text-gray-500 text-sm">2mm RR cable per meter</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-green-600 font-bold">$10.00</span>
+          <button class="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-full add-to-cart"
+            data-id="8" data-name="Electric Cable" data-price="10.00"
+            data-image="./asset/images/electric-cable-removebg-preview.png">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CART -->
+    <div class="col-span-12 lg:col-span-4">
+      <div class="sticky top-24 bg-white/80 rounded-2xl shadow-xl p-6">
+        <h2 class="text-xl font-extrabold mb-4">🛒 Your Cart</h2>
+
+        <div id="cartItems" class="space-y-5"></div>
+
+        <hr class="my-5">
+
+        <div class="flex justify-between font-bold text-lg">
+          <span>Total</span>
+          <span class="text-green-600" id="cartTotal">$0.00</span>
+        </div>
+
+        <button class="w-full mt-6 bg-indigo-600 text-white py-3 rounded-xl">
+          Checkout
         </button>
       </div>
-    </nav>
+    </div>
 
-    <!-- PRODUCTS GRID -->
-    <section class="px-8 py-2 bg-blue-200">
-      <div class="max-w-[1320px] mx-auto px-8 py-10">
-        <h2 class="text-3xl font-bold mb-6">Our Products</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <!-- PRODUCT CARD 1 -->
-
-          <div class="bg-white shadow rounded-xl overflow-hidden p-4">
-            <img src="./asset/images/smart-watch.png" class="mx-auto shadow-xl rounded-xl h-40 object-cover" />
-            <h3 class="font-semibold text-lg mt-3">Smart Watch</h3>
-            <p class="text-gray-600 text-sm">High-quality smart watch.</p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="font-bold text-green-600">$59.99</span>
-              <button class="bg-blue-600 text-white px-6 font-semibold py-2 rounded hover:bg-blue-700 cursor-pointer">
-                Add
-              </button>
-            </div>
-          </div>
-          <!-- PRODUCT CARD 2 -->
-          <div class="bg-white shadow rounded-xl overflow-hidden p-4">
-            <img src="./asset/images/white-earbuds.png" class="mx-auto w-60 shadow-xl rounded-xl h-40 object-cover" />
-            <h3 class="font-semibold text-lg mt-3">Wireless Earbuds</h3>
-            <p class="text-gray-600 text-sm">Noise-canceling earbuds.</p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="font-bold text-green-600">$39.99</span>
-              <button class="bg-blue-600 text-white px-6 font-semibold py-2 rounded hover:bg-blue-700 cursor-pointer">
-                Add
-              </button>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 3 -->
-          <div class="bg-white shadow rounded-xl overflow-hidden p-4">
-            <img src="./asset/images/mouse.png" class="shadow-xl mx-auto rounded-xl h-40 object-cover" />
-            <h3 class="font-semibold text-lg mt-3">Gaming Mouse</h3>
-            <p class="text-gray-600 text-sm">RGB gaming mouse.</p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="font-bold text-green-600">$29.99</span>
-              <button class="bg-blue-600 text-white px-6 font-semibold py-2 rounded hover:bg-blue-700 cursor-pointer">
-                Add
-              </button>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 4 -->
-          <div class="bg-white shadow rounded-xl overflow-hidden p-4">
-            <img src="./asset/images/wireless-speaker.png"
-              class="w-40 mx-auto shadow-xl rounded-xl h-40 object-cover" />
-            <h3 class="font-semibold text-lg mt-3">Portable Speaker</h3>
-            <p class="text-gray-600 text-sm">Deep bass portable speaker.</p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="font-bold text-green-600">$49.99</span>
-              <button class="bg-blue-600 text-white px-6 font-semibold py-2 rounded hover:bg-blue-700 cursor-pointer">
-                Add
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- CART DRAWER -->
-  <div id="cartDrawer"
-    class="fixed top-0 right-0 w-80 h-full bg-white shadow transform translate-x-full transition-all duration-300 z-50 p-6 overflow-y-auto">
-    <h2 class="text-2xl font-bold mb-4">Your Cart</h2>
-    <ul id="cartItems" class="space-y-3"></ul>
-
-    <p class="mt-6 text-lg font-bold">
-      Total: $<span id="cartTotal">0.00</span>
-    </p>
-
-    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 w-full" onclick="closeCart()">
-      Close
-    </button>
   </div>
-  <!-- cart page -->
+</section>
 
-
-  <div
-    class=" max-w-[1320px]  mx-auto relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default">
-    <table class="w-full text-sm text-left rtl:text-right text-body">
-      <thead class="text-sm text-body bg-neutral-secondary-medium border-b border-default-medium">
-        <tr>
-          <th scope="col" class="px-16 py-3">
-            <!-- <span class="sr-only">Image</span> -->
-            <p class="sr">Product image</p>
-          </th>
-          <th scope="col" class="px-6 py-3 font-medium">
-            Product
-          </th>
-          <th scope="col" class="px-14 py-3 font-medium">
-            Qty
-          </th>
-          <th scope="col" class="px-6 py-3 font-medium">
-            Price
-          </th>
-          <th scope="col" class="px-6 py-3 font-medium">
-            Action
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-          <td class="p-4">
-            <img src="/docs/images/products/apple-watch.png" class="w-16 md:w-24 max-w-full max-h-full"
-              alt="Apple Watch">
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            Apple Watch
-          </td>
-          <td class="px-6 py-4">
-            <form class="max-w-xs mx-auto">
-              <label for="counter-input-1" class="sr-only">Choose quantity:</label>
-              <div class="relative flex items-center">
-                <button type="button" id="decrement-button-1" data-input-counter-decrement="counter-input-1"
-                  class="flex items-center cursor-pointer justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14" />
-                  </svg>
-                </button>
-                <input type="text" id="counter-input-1" data-input-counter
-                  class="shrink-0  text-heading border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
-                  placeholder="" value="12" required />
-                <button type="button" id="increment-button-1" data-input-counter-increment="counter-input-1"
-                  class="flex items-center cursor-pointer justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14m-7 7V5" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            $599
-          </td>
-          <td class="px-6 py-4">
-            <a href="#" class="font-medium text-fg-danger hover:underline">Remove</a>
-          </td>
-        </tr>
-        <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-          <td class="p-4">
-            <img src="/docs/images/products/imac.png" class="w-16 md:w-24 max-w-full max-h-full" alt="Apple iMac">
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            iMac 27"
-          </td>
-          <td class="px-6 py-4">
-            <form class="max-w-xs mx-auto">
-              <label for="counter-input-2" class="sr-only">Choose quantity:</label>
-              <div class="relative flex items-center">
-                <button type="button" id="decrement-button-2" data-input-counter-decrement="counter-input-2"
-                  class=" cursor-pointer flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14" />
-                  </svg>
-                </button>
-                <input type="text" id="counter-input-2" data-input-counter
-                  class="shrink-0 text-heading border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
-                  placeholder="" value="12" required />
-                <button type="button" id="increment-button-2" data-input-counter-increment="counter-input-2"
-                  class=" cursor-pointer flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14m-7 7V5" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            $2499
-          </td>
-          <td class="px-6 py-4">
-            <a href="#" class="font-medium text-fg-danger hover:underline">Remove</a>
-          </td>
-        </tr>
-        <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-          <td class="p-4">
-            <img src="/docs/images/products/iphone-12.png" class="w-16 md:w-24 max-w-full max-h-full" alt="iPhone 12">
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            IPhone 12
-          </td>
-          <td class="px-6 py-4">
-            <form class="max-w-xs mx-auto">
-              <label for="counter-input-3" class="sr-only">Choose quantity:</label>
-              <div class="relative flex items-center">
-                <button type="button" id="decrement-button-3" data-input-counter-decrement="counter-input-3"
-                  class=" cursor-pointer flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14" />
-                  </svg>
-                </button>
-                <input type="text" id="counter-input-3" data-input-counter
-                  class="shrink-0 text-heading border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
-                  placeholder="" value="12" required />
-                <button type="button" id="increment-button-3" data-input-counter-increment="counter-input-3"
-                  class=" cursor-pointer flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary rounded-full text-sm focus:outline-none h-6 w-6">
-                  <svg class="w-3 h-3 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14m-7 7V5" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </td>
-          <td class="px-6 py-4 font-semibold text-heading">
-            $999
-          </td>
-          <td class="px-6 py-4">
-            <a href="#" class="font-medium text-fg-danger hover:underline">Remove</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- cart page end -->
-
-  <!-- BACKDROP -->
-  <div id="backdrop" class="hidden fixed inset-0 bg-black opacity-40 z-40" onclick="closeCart()"></div>
-  <!-- flowbite js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>
-  <script src="./script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
-
-<!-- flowbite js CDN -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script> -->
-<!-- <script src="./script.js"></script> -->
-<!--tailwind css CDN  -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-<!-- flowbite CDN -->
-<!-- <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css"
-      rel="stylesheet"
-    /> -->
